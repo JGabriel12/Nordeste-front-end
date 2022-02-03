@@ -21,14 +21,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/mesa.css" />
     <!-- CSS -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JQuery -->
   </head>
   <body>
     <!-- Forms -->
     <form action="http://127.0.0.1:8000/cadastrarEstadia" id="formulario" name="formulario" class="form" method="GET">
-
       <div class="select mt-2">
         <div class="label-mesa">
-         <label for="form-select">Escolha uma mesa</label>
+         <label for="form-select"><h1 class="titulo">Escolha uma mesa</h1></label>
         </div>
         <select class="form-select" id="id_mesa" name="id_mesa">
           <option value="1">Mesa 01</option>
@@ -44,5 +46,20 @@
       </div>
     </form>
     <!-- Forms -->
+    <script>
+      $("h1.titulo").hide();
+      $("h1.titulo").show("slow");
+
+      // Coletando a quantidade de mesas disponivel
+     /*  var show = $(window).load(function() {
+        http:/127.0.0.1:8000/ShowMesa 
+      }); */
+
+      $(document).ready(function(){
+      $.getJSON( "http:/127.0.0.1:8000/ShowMesa", function(mesa) {
+         console.log(mesa);
+      });
+});
+    </script>
   </body>
 </html>
