@@ -18,18 +18,17 @@
   </head>
   <body>
     <!-- Forms -->
-    <form action="http://127.0.0.1:8000/cadastrarEstadia" id="formulario" name="formulario" class="form" method="GET">
+    <form action="http://127.0.0.1:8000/cadastrarPedidos" id="formulario" name="formulario" class="form" method="GET">
       <div class="select mt-2">
         <div class="label-mesa">
-         <label for="form-select"><h1 class="titulo">Escolha uma mesa</h1></label>
+         <label for="form-select"><h1 class="titulo">Nossos pratos</h1></label>
         </div>
-        <select class="form-select" id="id_mesa" name="id_mesa">
-          <option value="null" selected>Escolha uma mesa</option>
+        <select class="form-select" id="id_prato" name="id_prato">
         </select>
       </div>
       </div>
       <div class="submit">
-        <input type="submit" id="escolher" class="btn btn-primary" value="Escolher"></input>
+        <input type="submit" class="btn btn-primary" value="Escolher"></input>
         
       </div>
     </form>
@@ -40,7 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Ariquivo JS -->
-    <script src="../js/mesas.js"></script>
+    <script src="../js/pratos.js"></script>
 
     <!-- Bootstrap -->
     <script
