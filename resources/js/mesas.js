@@ -10,9 +10,6 @@ $(document).ready(function () {
       )
     })
   })
-  $('#escolher').click(function () {
-    $(location).prop('href', 'http://127.0.0.1:8000/ShowPrato')
-  })
 })
 
 $('h1.titulo').hide()

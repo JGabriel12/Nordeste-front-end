@@ -8,5 +8,9 @@ $(document).ready(function () {
   })
 })
 
+// var string = location.href.split('=').pop()
+
+// alert(string)
+
 $('h1.titulo').hide()
 $('h1.titulo').show('slow')

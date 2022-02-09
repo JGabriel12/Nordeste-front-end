@@ -15,10 +15,18 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/mesa.css" />
 
+    <script>
+      var string = location.href.split('=').pop()
+      document.getElementById("id_mesa").value = string;
+    </script>
+
   </head>
   <body>
     <!-- Forms -->
-    <form action="http://127.0.0.1:8000/cadastrarPedidos" id="formulario" name="formulario" class="form" method="GET">
+    <form action="http://127.0.0.1:8000/cadastrarPedido" id="formulario" name="formulario" class="form" method="GET">
+
+      <input type="hidden" name="id_mesa" id="id_mesa" ></input>
+
       <div class="select mt-2">
         <div class="label-mesa">
          <label for="form-select"><h1 class="titulo">Nossos pratos</h1></label>
@@ -32,7 +40,7 @@
         
       </div>
     </form>
-    <!-- Forms -->
+
         
 
     <!-- JQuery -->
@@ -40,6 +48,7 @@
 
     <!-- Ariquivo JS -->
     <script src="../js/pratos.js"></script>
+    <script src="../js/mesas.js"></script>
 
     <!-- Bootstrap -->
     <script
