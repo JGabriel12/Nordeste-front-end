@@ -19,7 +19,7 @@
   <body>
     <!-- Forms desativar mesas-->
     <div class="deletarMesa">
-      <form action="http://127.0.0.1:8000/AtualizarMesa" id="formulario" name="formulario" class="form" method="GET">
+      <form action="http://127.0.0.1:8000/ExcluirMesa" id="formulario" name="formulario" class="form" method="GET">
         <div class="select mt-2">
           <label for="form-select"><h1 class="titulo">Escolha uma mesa para desativar</h1></label>
           <select class="form-select" id="id_mesa" name="id_mesa">
@@ -34,10 +34,10 @@
     <hr>
     <!-- Forms desativar pratos-->
     <div class="deletarPrato">
-      <form action="http://127.0.0.1:8000/AtualizarPrato" id="formulario" name="formulario" class="form" method="GET">
+      <form action="http://127.0.0.1:8000/ExcluirPrato" id="formulario" name="formulario" class="form" method="GET">
         <div class="select mt-2">
           <label for="form-select"><h1 class="titulo">Escolha um prato para desativar</h1></label>
-          <select class="form-select" id="id_mesa" name="id_mesa">
+          <select class="form-select" id="id_prato" name="id_prato">
             <option value="null" selected>Pratos ativos</option>
           </select>
         </div>
@@ -50,7 +50,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Ariquivo JS -->
-    <script src=""></script>
+    <script src="../js/pratos.js"></script>
+    <script src="../js/mesas.js"></script>
 
     <!-- Bootstrap script-->
     <script
