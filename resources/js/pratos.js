@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // Listar pratos
   $.get('http://127.0.0.1:8000/ShowPrato', function (prato) {
     prato.forEach(function (item) {
       $('#id_prato').append(
@@ -6,9 +7,11 @@ $(document).ready(function () {
       )
     })
   })
+  var string = location.href.split('=').pop()
+  $('#id_mesa').val(string)
 })
 
-// var string = location.href.split('=').pop()
+//
 
 // alert(string)
 
