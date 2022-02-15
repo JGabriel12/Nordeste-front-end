@@ -33,10 +33,21 @@
       <div class="flexbtn submit">
         <input type="submit" class="btn btn-primary" value="Escolher"></input>        
       </div>
-      <div class="flexbtn submit">
-        <a class="btn btn-primary" href="../html/load.html" role="button">Finalizar estadia</a>        
-      </div>
     </form>
+      <div class="flexbtn">
+          <!-- Cancelar estadia -->    
+        <form action="http://127.0.0.1:8000/FinalizarEstadia" id="formulario" name="formulario" class="form" method="GET">
+          <input type="hidden" name="id_estadia" id="id_estadia" ></input>
+          <div class="flexbtn submit">
+            <input type="submit" class="btn btn-primary" value="Finalizar estadia"></input>        
+          </div>
+        </form>
+          
+          <!-- Fechar mesa -->    
+          <div class="flexbtn">
+            <a class="btn btn-primary submit" href="../html/load.html" role="button">Fechar mesa</a>        
+          </div>
+      </div>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

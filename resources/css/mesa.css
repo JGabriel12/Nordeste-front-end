@@ -34,3 +34,9 @@ body {
   min-height: 100vh;
   text-align: center;
 }
+
+.flexbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
