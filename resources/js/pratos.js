@@ -16,6 +16,9 @@ $(document).ready(function () {
   })
   var string = location.href.split('=').pop()
   $('#id_mesa').val(string)
+
+  var string = location.href.split('a=').pop()
+  $('#id_estadia').val(string)
 })
 
 //
