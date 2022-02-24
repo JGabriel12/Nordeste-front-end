@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  min-height: 100vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgb(243, 149, 99)),
+      to(rgba(242, 82, 87, 0.603))
+    )
+    no-repeat;
+  background: -moz-linear-gradient(
+    left,
+    rgb(243, 149, 99),
+    rgba(242, 82, 87, 0.603)
+  );
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='rgb(243, 149, 99)', EndColorStr='rgba(242, 82, 87, 0.603)');
+}
+
+.form-select {
+  border: 1px solid rgba(255, 0, 21, 0.5);
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgb(243, 149, 99)),
+      to(rgba(242, 82, 87, 0.486))
+    )
+    no-repeat;
+  background: -moz-linear-gradient(
+    left,
+    rgb(243, 149, 99),
+    rgba(242, 82, 87, 0.486)
+  );
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='rgb(243, 149, 99)', EndColorStr='rgba(242, 82, 87, 0.486)');
+}
+
+.form-select:hover {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgb(226, 98, 30)),
+      to(rgba(242, 82, 87, 0.856))
+    )
+    no-repeat;
+  background: -moz-linear-gradient(
+    left,
+    rgb(226, 98, 30),
+    rgba(242, 82, 87, 0.856)
+  );
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='rgb(243, 138, 81)', EndColorStr='rgb(226, 98, 30)');
+}
+
+.btn {
+  border: none;
+  background-color: rgb(197, 85, 24);
+}
+
+.btn:hover {
+  background-color: rgb(87, 32, 3);
+}
+
+.titulo {
+  height: 6rem;
+  width: 12rem;
+  margin: 1rem;
+  font-family: cursive;
+}
