@@ -24,6 +24,10 @@
 
       <input type="hidden" name="id_mesa" id="id_mesa" ></input>
 
+      <!-- *INPUT HIDDEN SÓ FUNCIONA UMA VEZ -->
+      <input type="hidden" name="valor_prato" id="valor_prato" ></input>
+      <input type="hidden" name="id_estadia" id="id_estadia" ></input>
+
       <div class="select mt-2">
         <div class="label-mesa">
          <label for="form-select"><h1 class="titulo">Nossos pratos</h1></label>
@@ -37,10 +41,13 @@
       </div>
     </form>
     <div class="flexbtn">
-        <!-- Cancelar estadia -->    
+        <!-- Fechar estadia -->    
       <form action="http://127.0.0.1:8000/FinalizarEstadia" id="formulario" name="formulario"class="form" method="GET">
-        <input type="hidden" name="id_estadia" id="id_estadia" ></input>
         <div class="flexbtn submit">
+
+          <!-- *INPUT HIDDEN SÓ FUNCIONA UMA VEZ -->
+          <input type="hidden" name="id_estadia" id="id_estadia" ></input>
+
           <input type="submit" class=" teste btn btn-primary" value="Finalizar estadia">     
         </div>
       </form>
