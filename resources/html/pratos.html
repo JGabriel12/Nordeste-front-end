@@ -13,9 +13,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"/>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/mesa.css" />
-    <link rel="stylesheet" href="../css/pratos.css" />
+     <!-- CSS -->
+     <link rel="stylesheet" href="../css/mesa.css" />
+     <link rel="stylesheet" href="../css/pratos.css" />
 
   </head>
   <body>
@@ -26,7 +26,7 @@
 
       <!-- *INPUT HIDDEN SÓ FUNCIONA UMA VEZ -->
       <input type="hidden" name="valor_prato" id="valor_prato" ></input>
-      <input type="hidden" name="id_estadia" id="id_estadia" ></input>
+      <input type="hidden" name="id_estadia" id="id_estadia" ></input> 
 
       <div class="select mt-2">
         <div class="label-mesa">
@@ -40,14 +40,12 @@
         <input type="submit" class="btn btn-primary" value="Escolher"></input>        
       </div>
     </form>
+    <!-- Fechar estadia -->    
     <div class="flexbtn">
-        <!-- Fechar estadia -->    
       <form action="http://127.0.0.1:8000/FinalizarEstadia" id="formulario" name="formulario"class="form" method="GET">
         <div class="flexbtn submit">
-
           <!-- *INPUT HIDDEN SÓ FUNCIONA UMA VEZ -->
-          <input type="hidden" name="id_estadia" id="id_estadia" ></input>
-
+          <input type="hidden" name="id_estadia" id="id_estadia"></input>
           <input type="submit" class=" teste btn btn-primary" value="Finalizar estadia">     
         </div>
       </form>
